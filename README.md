@@ -1,6 +1,8 @@
 # Type Racing Game
 
-# How to Play the Type Racing Game
+This project is a Type Racing game developed using Preact. The game allows players to test their typing speed by matching random words generated from an API. It supports various settings such as adjusting the font size and the number of words. The game also features undo and redo options to manage changes.
+
+## How to Play the Type Racing Game
 
 1. **Start a Game**:
    - Click the **"Add Game"** button on the toolbar to create a new game. The game will appear on the right side of the screen.
@@ -28,3 +30,32 @@
    - **Delete Game**: Remove the selected game or the last game if none is selected.
 
 Enjoy racing against time to match words in the shortest time possible!
+
+## How to Run the Game
+
+To run the game locally, follow these steps:
+
+1. **Clone the repository**:
+```
+git clone git@github.com:IbrahimKashif1/Word-Search-Game.git
+```
+
+2. **Navigate to the project directory**:
+```
+cd Word-Search-Game/frontend
+```
+
+3. **Install dependencies**:
+```
+npm install
+```
+
+4. **Start the development server**:
+```
+npm run dev
+```
+
+Open the game: Once the development server is running, open your browser and navigate to the local server address (usually http://localhost:3000).
+
+Enjoy the game!
+
