@@ -1,0 +1,271 @@
+* {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#toolbar {
+  background-color: lightgray;
+  border: 1px solid black;
+  height: 50px;
+  flex: 0 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+#buttons {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow: hidden;
+
+  button {
+    width: 150px;
+  }
+
+  select {
+    width: 150px;
+  }
+}
+
+#optionsCont {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  overflow: hidden;
+
+  button {
+    width: 150px;
+  }
+
+  select {
+    width: 150px;
+  }
+}
+
+div#app {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+div#body {
+  background-color: white;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+div#left {
+  background-color: green;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+div#listGamesView {
+  background-color: whitesmoke;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  border: 1px solid black;
+  gap: 20px;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div#gameConsole {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+
+#textInput {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+#groupingContainer {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#fontSizeContainer,
+#numWordsContainer {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#fontSizeContainer label,
+#numWordsContainer label {
+  flex: 0 0 auto;
+}
+
+#fontSizeContainer input,
+#numWordsContainer input {
+  flex: 1 1 auto;
+  min-width: 0px; /* Students might forget this! */
+}
+
+#resetButton {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameProgress {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#numWords {
+  padding-left: 0px;
+  vertical-align: top;
+  color: black;
+}
+
+#numWordsInput.invalid {
+  background-color: lightcoral;
+  border: 2px solid red;
+}
+
+@media only screen and (min-width: 601px) {
+  #groupingContainer {
+    flex-direction: row;
+  }
+}
+
+#gameArea {
+  background-color: white;
+  border: 1px solid black;
+  flex: 2;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  overflow: scroll;
+  align-content: flex-start;
+}
+
+#wordContainer {
+  flex: 0 0 auto;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#wordContainer:hover {
+  border: 2px solid lightpink;
+  background-color: lightyellow;
+  padding: 8px;
+}
+
+#gameArea.no-hover #wordContainer:hover {
+  border: none;
+  background-color: rgb(0, 255, 0);
+  padding: 10px;
+}
+
+#gameArea.won {
+  background-color: rgb(236, 255, 220);
+}
+
+#gameArea.invalidGame {
+  background-color: rgb(255, 220, 220);
+  justify-content: center;
+  align-content: center;
+}
+
+#invalidContents {
+  font-size: 5vw;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.done {
+  background-color: rgb(0, 255, 0);
+}
+
+.current {
+  background-color: rgb(255, 255, 0);
+}
+
+.inc {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#gameArea.no-active-game {
+  background-color: white;
+}
+
+div#game {
+  background-color: white;
+  display: flex;
+  height: 80px;
+  flex-direction: row;
+}
+
+div.focusedGame {
+  border: 2px solid red;
+}
+
+div.unfocusedGame {
+  border: 1px solid black;
+}
+
+#progressBar,
+#progressRem {
+  width: 100%; /* Make it fill the container horizontally */
+}
+
+div#progressBar {
+  background-color: lightgreen;
+}
+
+div#progressRem {
+  background-color: lightgray;
+}
+
+#gameNo {
+  height: 80px;
+  width: 80px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
