@@ -1,6 +1,12 @@
-# Type Racing Game
+# Type Racing Game with Preact
 
-This project is a Type Racing game developed using Preact. The game allows players to test their typing speed by matching random words generated from an API. It supports various settings such as adjusting the font size and the number of words. The game also features undo and redo options to manage changes.
+This project is a **Type Racing game** developed using **Preact**. The game allows players to test their typing speed by matching random words generated from an API. It supports various settings such as adjusting the font size and the number of words. The game also features undo and redo options to manage changes.
+
+## Example of the Game
+
+Here is an example of what the game looks like:
+
+![Screenshot of Type Racing Game](https://github.com/user-attachments/assets/c9da8d64-1ffa-4870-b5f7-ced5e066c03c)
 
 ## How to Play the Type Racing Game
 
@@ -42,7 +48,7 @@ git clone git@github.com:IbrahimKashif1/Word-Search-Game.git
 
 2. **Navigate to the project directory**:
 ```
-cd Word-Search-Game/frontend
+cd Word-Search-Game/Type-Racing-Game/frontend
 ```
 
 3. **Install dependencies**:
